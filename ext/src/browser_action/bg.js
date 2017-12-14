@@ -4,3 +4,7 @@ document.getElementById('SaveData').onclick=function () {
 document.getElementById('CalculatePercentile').onclick=function () {
     window.open("http://localhost/HostelAccomodation/calculatepercentile.php");
 }
+
+document.getElementById('CreateDatabase').onclick=function () {
+    window.open("http://localhost/HostelAccomodation/createdatabase.php");
+}
