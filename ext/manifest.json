@@ -1,0 +1,60 @@
+{
+  "name": "CHANGE THIS : Extension boilerplate",
+  "version": "0.10.2",
+  "manifest_version": 2,
+  "description": "This extension was created with the awesome extensionizr.com",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "src/bg/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Extension",
+    "default_popup": "src/browser_action/browser_action.html"
+
+  },
+
+  "permissions": [
+    "tabs", "<all_urls>","activeTab"
+
+  ],
+  "omnibox": {
+    "keyword": "extensionizr"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.bietjhs.ac.in/studentresultdisplay/FrmResult_even.aspx/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ],
+      "js": [
+        "src/inject/Inject2.js",
+        "js/jquery/jquery.js"
+      ]
+
+    },
+    {
+      "matches": [
+        "http://www.bietjhs.ac.in/studentresultdisplay/frmprintreport.aspx/*",
+        "http://localhost/XYZ/"
+      ],
+      "js": [
+        "src/inject/Inject1.js",
+        "js/jquery/jquery.js"
+      ]
+    }
+  ]
+}
