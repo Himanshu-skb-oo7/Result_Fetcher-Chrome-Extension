@@ -1,8 +1,7 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
-  "version": "0.10.2",
+  "name": "Result Fetcher",
+  "version": "1.0",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
   "homepage_url": "http://extensionizr.com",
   "icons": {
     "16": "icons/icon16.png",
@@ -30,7 +29,7 @@
 
   ],
   "omnibox": {
-    "keyword": "extensionizr"
+    "keyword": "Result Fetcher"
   },
 
   "content_scripts": [
@@ -49,8 +48,7 @@
     },
     {
       "matches": [
-        "http://www.bietjhs.ac.in/studentresultdisplay/frmprintreport.aspx/*",
-        "http://localhost/XYZ/"
+        "http://www.bietjhs.ac.in/studentresultdisplay/frmprintreport.aspx/*"
       ],
       "js": [
         "src/inject/Inject1.js",
