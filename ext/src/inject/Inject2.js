@@ -31,7 +31,7 @@ chrome.extension.sendMessage({}, function(response) {
             var btn=document.createElement("input");
 
             btn.setAttribute("type","submit");
-            form.setAttribute("action","http://localhost/HostelAccomodation/SaveData.php");
+            form.setAttribute("action","http://PHP/SaveData.php");
             form.setAttribute("method","post");
             input.setAttribute("value",myText.toString());
             input1.setAttribute("value",myText1.toString());

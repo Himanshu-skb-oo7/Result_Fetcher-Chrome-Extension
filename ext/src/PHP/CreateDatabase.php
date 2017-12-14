@@ -5,11 +5,11 @@ $password = "";
 $dbname = "";
 
 $conn = mysqli_connect($servername, $username, $dbname);
-$createDatabase="create database awesomee";
+$createDatabase="create database collegedata";
 
 mysqli_query($conn,$createDatabase);
 
-$dbname="awesomee";
+$dbname="collegedata";
 $conn1=mysqli_connect($servername,$username,$password,$dbname);
 
 $createTableSQL="create table requiredtable(
@@ -24,4 +24,7 @@ $createTableSQL="create table requiredtable(
 
 
 mysqli_query($conn1, $createTableSQL);
+
+
+    echo "<script>window.close();</script>";
 ?>
